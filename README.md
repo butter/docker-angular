@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.0`, `4.0`, `4`, `latest` (*4/Dockerfile*)](https://github.com/butter/docker-angular/blob/f9efce93fb6e393f0d649d179533f5865ec9bc23/4/Dockerfile)
+-	[`5.2.8`, `5.2`, `5`, `latest` (*5/Dockerfile*)](https://github.com/butter/docker-angular/blob/5d6a46b4f7e7080807002e7f928cbc4f95edf7ee/5/Dockerfile)
+-	[`4.0.0`, `4.0`, `4` (*4/Dockerfile*)](https://github.com/butter/docker-angular/blob/f9efce93fb6e393f0d649d179533f5865ec9bc23/4/Dockerfile)
 -	[`2.4.6`, `2.4`, `2` (*2/Dockerfile*)](https://github.com/butter/docker-angular/blob/f9efce93fb6e393f0d649d179533f5865ec9bc23/2/Dockerfile)
 -	[`2.4.5` (*2/Dockerfile*)](https://github.com/butter/docker-angular/blob/c5af46c67b57ba8e5184bc4f769ade126902bd22/2/Dockerfile)
 
@@ -16,14 +17,7 @@ Angular (commonly referred to as "Angular 2+" or "Angular 2") is a TypeScript-ba
 ## Create a `Dockerfile` in your Angular project
 
 ```dockerfile
-FROM butter/angular:4.0.0
-CMD [ "npm", "start" ]
-```
-
-or (if you need to use Angular 2):
-
-```dockerfile
-FROM butter/angular:2.4.6
+FROM butter/angular:5.2.8
 CMD [ "npm", "start" ]
 ```
 
