@@ -1,5 +1,5 @@
-FROM butter/node:7.4.0
-MAINTAINER Adam Walz <adam@butter.ai>
+FROM butter/node:boron
+LABEL maintainer="Butter.ai <dev@butter.ai>"
 
 ENV \
   NGINX_VERSION=1.11.9-1~jessie

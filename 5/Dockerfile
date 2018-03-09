@@ -1,8 +1,8 @@
-FROM butter/node:boron
+FROM butter/node:carbon
 LABEL maintainer="Butter.ai <dev@butter.ai>"
 
 ENV \
-  NGINX_VERSION=1.11.9-1~jessie
+  NGINX_VERSION=1.13.9-1~jessie
 
 # Standard set up Nginx
 RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 \
@@ -17,5 +17,5 @@ RUN groupadd -r butter && useradd -r -g butter butter
 
 WORKDIR /usr/src/app/
 
-COPY package.json /usr/src/app
+COPY . /usr/src/app
 RUN npm install
